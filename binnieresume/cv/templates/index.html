@@ -29,69 +29,71 @@
 
 <body id="page-top">
 	<!-- Start Navigation bar-->
-	<div class="navbar navbar-expand-lg navbar-default navbar-fixed-top justify-content-between">
-		<a class="navbar-brand js-scroll-trigger" href="#page-top">
-			<span class="d-block d-lg-none"> HyunBin (Binnie) You </span>
-		</a>
+	<div class="navbar navbar-expand-lg navbar-default navbar-static-top justify-content-between">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand js-scroll-trigger" href="#page-top">
+					<span class="lastname"> HyunBin (Binnie) You </span>
+				</a>
 
-		<div>
-			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>                
-			</button>
-		</div>
-		
-		
-		<div class="collapse navbar-collapse navHeaderCollapse">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="/"> Home </a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="page-top"> 
-						CV <b class="caret"></b>
-					</a>
-					<ul class="dropdown-menu">
-						<li><a href="#education"> Education </a></li>
-						<li><a href="#experience"> Research Experience </a></li>
-						<li><a href="#publication"> Publication </a></li>
-						<li><a href="#licensure"> Licensure </a></li>
-						<li><a href="#etc"> Miscellaneous </a></li>
-					</ul>
-				</li>
-				<li><a href="#contact"> Contact </a></li>
-			</ul>
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                
+				</button>
+			</div>
+			
+			
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="/"> Home </a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="page-top"> 
+							CV <b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#focus"> Research Interest </a></li>					
+							<li><a href="#education"> Education </a></li>
+							<li><a href="#experience"> Research Experience </a></li>
+							<li><a href="#publication"> Publication </a></li>
+							<li><a href="#licensure"> Licensure </a></li>
+							<li><a href="#etc"> Miscellaneous </a></li>
+						</ul>
+					</li>
+					<li><a href="#"> Blog </a></li>
+					<li><a href="#contact"> Contact </a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<!-- End Navigation bar-->
 
 
-	<div id="cv">
+	<div id="content-container">
 		<!-- #entry-header -->
-		<section>
-			<div id="entry-header">
-				<div id="profile" >
-					<img src="{% static 'images/pic1.jpg' %}" alt />
-				</div>
-				
-				<h1 class>
-					<a href="/">HyunBin (Binnie) 
-					<span class="lastname"> You </span> 
-					| 유현빈 </a><br>
-				</h1>
-				<h2 class> 
-					Ph.D. student in Nursing at 
-					<a href="http://duke.edu/"><span style="color:#0B589B;">Duke University </span></a> <br>
-					Advisor: Dr. (<a href="">Adivsor name</a>) <br>
-					<a href="mailto:hyunbin.you@duke.edu" target="_blank" > hyunbin.you@duke.edu </a>
-					・ <a href="//goo.gl/maps/HfDUGDEGxwYPU2wY6"> 307 Trent Drive </a>
-					・ <a href=""> Curriculum Vitae </a><br><br> 
-					<br>
-				</h2>
+		<section id="entry-header">
+			<div id="profile" >
+				<img src="{% static 'images/pic1.jpg' %}" alt />
 			</div>
+			
+			<h1 class>
+				<a href="/">HyunBin (Binnie) 
+				<span class="lastname"> You </span> <br>
+				유현빈 </a>
+			</h1>
+			<h2 class> 
+				Ph.D. student in Nursing at 
+				<a href="http://duke.edu/"><span style="color:#0B589B;">Duke University </span></a> <br>
+				Advisor: Dr. (<a href="">Adivsor name</a>) <br>
+				<a href="mailto:hyunbin.you@duke.edu" target="_blank" > hyunbin.you@duke.edu </a>
+				・ <a href="//goo.gl/maps/HfDUGDEGxwYPU2wY6"> 307 Trent Drive </a>
+				・ <a href=""> Curriculum Vitae </a><br><br> 
+				<br>
+			</h2>
 		</section>
 
 
-		<section id="research interest">
+		<section id="focus">
 			<div class="sectionTitle">
 				<h1> Research Interest </h1>
 			</div>
@@ -140,17 +142,16 @@
 		<!-- Education -->
 		<section id="education">
 			<div class="sectionTitle">
-				<h1> Education </h1>
+				<h1> Education </h1><br>
 			</div>
 			<!-- Duke -->
 			<div class="sectionContent" style="width: 100%; display:table;">
-				<div style=display: table-row">
-					<div style="width: 200px; display: table-cell;">
-						<br>
+				<div style="display: table-row; ">
+					<div style="width: 45%; display: table-cell; vertical-align: middle;">
 						<img src="{% static 'images/DUSON.png' %}" width=100% height=auto style="transform:translate(0px, -30px);">
 					</div>
 					<div style="display: table-cell;">
-						<h2 class><strong> Duke University </strong></h2>
+						<h2 class> <br>Duke University </h2>
 						<ul>Ph.D. in Nursing </ul>
 						<ul>Advisor: Dr. <a href="">XXX</a> </ul>
 						<ul><span class="lastname"> August 2020 – present </span></ul>
@@ -159,9 +160,8 @@
 			</div>
 			<!-- SNU -->
 			<div class="sectionContent" style="width: 100%; display:table;">
-				<div style=display: table-row">
-					<div style="width: 200px; display: table-cell;">
-						<br>
+				<div style="display: table-row">
+					<div style="width: 45%; display: table-cell; vertical-align: middle;">
 						<img src="{% static 'images/SNU.png' %}" width=100% height=auto style="transform:translate(0px, -30px);">
 					</div>
 					<div style="display: table-cell;">
@@ -174,9 +174,8 @@
 			</div>
 
 			<div class="sectionContent" style="width: 100%; display:table;">
-				<div style=display: table-row">
-					<div style="width: 200px; display: table-cell;">
-						<br>
+				<div style="display: table-row;">
+					<div style="width: 45%; display: table-cell; vertical-align: middle;">
 						<img src="{% static 'images/SNU.png' %}" width=100% height=auto style="transform:translate(0px, -30px);">
 					</div>
 					<div style="display: table-cell;">
@@ -204,6 +203,7 @@
 							<ul>Adisor: [Professor Name]</ul>
 							<ul><span class="lastname">Semester Year</span></ul>
 				</article>
+				<br>
 				<article>
 					<h2> Chronic illness research lab </h2>
 						<h4> Seoul National University  </h4>
@@ -248,7 +248,6 @@
 				<h2> 2019 </h2>
 				<article>
 					<h4> Master's thesis </h4>
-					<br> 
 					<p> Anxiety and Critical Care Needs of the Families in the ICU </p>
 					<p>
 						<a href=""> [PDF] </a>
@@ -314,10 +313,10 @@
 				<h1> Miscellaneous </h1>
 			</div>
 			
-			<div class="sectionContent" style="display: none;">
+			<div class="sectionContent">
 				<!-- Grants -->
 				<article style="display: none;">
-					<h2> Grants </h2>
+					<h1> Grants </h1>
 					<li>
 						<h4> Grant # (PI Name)  </h4>
 						<p class="subDetails">
@@ -335,92 +334,87 @@
 						Month Year, Poster Presentation, [at Where]
 					</li>
 				</article>
+				<br>
 
 				<!-- Honors & Awards -->
 				<article>
-					
-					<h2> Honors & Awards </h2>
-					<li>
-						<h4> Semester High Honors, Seoul National University </h4>
-						Merit-based, Spring 2018, Fall 2018
-					</li>
-					<li>
-						<h4> Excellence Award in Nursing Students Research Award for the undergraduate thesis (2014) </h4>
-						granted by the director of the Research Institute of Nursing Science, Seoul National University
-					</li>
-					<li>
-						<h4> LA alumni scholarship </h4>
-						Merit-based, Spring 2014
-					</li>
-					<li>
-						<h4> SNU Development Fund scholarship </h4>
-						Merit-based, Fall 2013
-					</li>
-					<li>
-						<h4> Semester High Honors Scholarships, Seoul National University  </h4>
-						Merit-based, Spring 2012, Fall 2012, Fall 2013, Fall 2014
-					</li>
+					<h1> Honors & Awards </h1>
+						<h3> Semester High Honors, Seoul National University </h3>
+							<li>Merit-based, Spring 2018, Fall 2018</li>
+						<h3> Excellence Award in Nursing Students Research Award for the undergraduate thesis (2014) </h3>
+							<li> granted by the director of the Research Institute of Nursing Science, Seoul National University</li>
+						<h3> LA alumni scholarship </h3>
+							<li>Merit-based, Spring 2014</li>
+						<h3> SNU Development Fund scholarship </h3>
+							<li>Merit-based, Fall 2013</li>
+						<h3> Semester High Honors Scholarships, Seoul National University  </h3>
+							<li>Merit-based, Spring 2012, Fall 2012, Fall 2013, Fall 2014</li>
 				</article>
-				
+				<br>
+
 				<!-- Talks & Presentations -->
-				<article>
-					<h2> Talks & Presentations </h2>
+				<article  style="display: none;">
+					<h1> Talks & Presentations </h1>
 					<li>
-						<h4> Talk  </h4>
+						<h3> Talk  </h3>
 						Month Year, Oral Presentation, [at Where]
 					</li>
 					<li>
-						<h4> Presentation  </h4>
+						<h3> Presentation  </h3>
 						Month Year, Poster Presentation, [at Where]
 					</li>
 				</article>
+				<br>
 				
 				<!-- Teaching -->
-				<article>
-					<h2> Teaching </h2>
+				<article  style="display: none;">
+					<h1> Teaching </h1>
 					<li>
-						<h4> Graduate Teaching Assistant  </h4>
+						<h3> Graduate Teaching Assistant  </h3>
 						University, City, State <br>
 						Course name (NUR 000)<br>
 						Instructor: [Professor Name]<br>
 						Semester Year
 					</li>
 				</article>
+				<br>
 
 				<!-- Skills -->
 				<article>
-					<h2> Skills </h2>
-					<li>
-						<h4> Language Proficiency </h4>
-						Fluent in English <br>
-						Native in Korean<br>
-						Beginner in Spanish and Mandarin
-					</li>
-					<li>
-						<h4> Technical Skills </h4>
-						Moderate: R, SPSS <br>
-						Novice: Python, HTML, JavaScript, CSS
-					</li>
+					<h1> Skills </h1>
+					<ul>
+						<h3> Language Proficiency </h3>
+						<li>Fluent in English </li>
+						<li>Native in Korean</li>
+						<li>Beginner in Spanish and Mandarin</li>
+					</ul>
+					<br>
+					<ul>
+						<h3> Technical Skills </h3>
+						<li>Moderate: R, SPSS </li>
+						<li>Novice: Python, HTML, JavaScript, CSS</li>
+					</ul>
 				</article>
+				<br>
 
 				<!-- Professional Service -->
-				<article>
-					<h2> Professional Service </h2>
+				<article style="display: none;">
+					<h1> Professional Service </h1>
 					<li>
-						<h4> Reviewer </h4>
+						<h3> Reviewer </h3>
 						<ul>
 							<li> Somewhere 2020 </li>
 							<li> Somewhere 2020 </li>
 						</ul>
 					</li>
+					<br>
 					<li>
-						<h4> Membersips in Professional Societies </h4>
+						<h3> Membersips in Professional Societies </h3>
 						<ul>
 							<li> Korean Nurses Association | 2015 - present </li>
 							<li> Hospital Nurses Association | 2015 - 2019 </li>
 							<li> Korean Association of Critical Care Nurses | 2015 - 2019 </li>
 						</ul>
-						
 					</li>
 				</article>
 
