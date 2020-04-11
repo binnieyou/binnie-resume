@@ -1,0 +1,211 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+    border:0;
+    font:inherit;
+    font-size:100%;
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+    }
+    
+    article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display:block;
+    }
+    
+    html, body {background: #ffffff; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
+    
+    .clear {clear: both;}
+    
+    p {
+        font-size: 1em;
+        line-height: 1.4em;
+        margin-bottom: ;
+        color: #444;
+    }
+    
+    #cv {
+        width: 90%;
+        max-width: 800px;
+        background: #f3f3f3;
+        margin: 30px auto;
+    }
+    
+    #entry-header {
+        padding: 25px 35px;
+        border-bottom: 2px solid #dedede;
+        background: #ededed;
+    }
+    
+    #entry-header h1 {
+        font-size: 2.5em;
+        font-weight: 700;
+        font-family: 'Stylish', sans-serif;
+        color: #01151f;
+        margin-top: 0;
+        margin-bottom: 6px;
+    }
+
+    #entry-header h1, #entry-header h1 a, #entry-header h1 a:visited, #entry-header h1 a:active {
+        font-family: 'Stylish', sans-serif;
+        color: #01151f;
+        font-size: 35pt;
+        text-decoration-style: wavy;
+        text-decoration-color: indianred;
+    }
+    
+    #entry-header p {
+        font-size: 12pt;
+        margin-left: 2px;
+        font-family: 'Lato', sans-serif;
+    }
+    
+    #entry-header h2, #entry-header h2 a, #entry-header h2 a:visited, #entry-header h2 a:active {
+        font-size: 12pt;
+        margin-left: 2px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .lastname {
+        color: indianred;
+    }
+
+    .about {
+        margin: 0px 0px 16px;
+        padding: 0px 0px 0px 40px;
+
+    }
+
+    #mainArea {
+        padding: 30px;
+    }
+    
+    #profile {
+        width: 12.5%;
+        float: left;
+        margin-right: 30px;
+    }
+    
+    #profile img {
+        width: 100%;
+        height: auto;
+        border-radius: 50px;
+    }
+    
+    #entry-header {
+        float: left;
+    }
+    
+    
+    
+    section {
+        border-bottom: 1px solid #dedede;
+        padding: 40px 0 0;
+    }
+    
+    section:first-child {
+        border-top: 0;
+    }
+    
+    section:last-child {
+        padding: 20px 0 10px;
+    }
+    
+    .sectionTitle {
+        float: left;
+        width: ;
+        padding: 10px ;
+        margin-left: ;
+    }
+    
+    .sectionContent {
+        float: right;
+        width: 72.5%;
+        margin-left: ;
+    }
+    
+    .sectionTitle h1 {
+        font-family: 'Merriweather', serif;
+        font-style: italic;
+        font-size: 1.5em;
+        color: #076d9f;
+        padding-left: ;
+    }
+    
+    .sectionContent h2 {
+        font-family: 'Lato';
+        color: #01151f;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    
+    .subDetails {
+        font-size: 0.8em;
+        color: indianred;
+        font-style: italic;
+        margin-bottom: 3px;
+    }
+
+    
+    @media all and (min-width: 602px) and (max-width: 800px) {
+        #profile {
+            display: none;
+        }
+        
+
+    
+    @media all and (max-width: 601px) {
+        #cv {
+            width: 95%;
+            margin: 10px auto;
+            min-width: 280px;
+        }
+        
+        #profile {
+            display: none;
+        }
+        
+        #entry-header {
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .sectionTitle, .sectionContent {
+            float: none;
+            width: 100%;
+        }
+        
+        .sectionTitle {
+            margin-left: -2px;
+            font-size: 1.25em;
+        }
+    }
+        
+
+    
+    @media all and (max-width: 480px) {
+        .mainDetails {
+            padding: 15px 15px;
+        }
+        
+        section {
+            padding: 15px 0 0;
+        }
+        
+        #mainArea {
+            padding: 0 25px;
+        }
+
+        
+        #entry-header h1 {
+            line-height: .8em;
+            margin-bottom: 4px;
+        }
+    }
+    
+    @media print {
+        #cv {
+            width: 100%;
+        }
+    }
+} 
