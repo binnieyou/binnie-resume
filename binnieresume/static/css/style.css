@@ -170,6 +170,10 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
         margin-bottom: 3px;
     }
 
+    #detailArticle {
+        
+    }
+
     
     @media all and (min-width: 202px) and (max-width: 500px) {
         #profile {
