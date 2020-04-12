@@ -40,15 +40,17 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
         font-weight: 700;
         font-family: 'Oswald', sans-serif;
         color: #01151f;
-        margin-bottom: 0.8em;
+        margin-bottom: 0.5em;
+        padding-left: 0.3em;
     }
 
     #entry-header h1, #entry-header h1 a, #entry-header h1 a:visited, #entry-header h1 a:active {
         font-family: 'Oswald', sans-serif;
         color: #01151f;
-        font-size: 2em;
+        font-size: 1.5em;
         text-decoration-style: wavy;
         text-decoration-color: indianred;
+        padding-left: 0.3em;
     }
     
     
@@ -114,7 +116,9 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
         font-family: 'Lato';
         font-size: 1em;
         width: 100%;
-        padding-left: 10px;
+        padding-left: 1em;
+        padding-right: 2em;
+        
     }
 
     .sectionContent h1 {
@@ -174,7 +178,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
         
 
     
-    @media all and (max-width: 201px) {
+    @media all and (max-width: 400px) {
         #content-container {
             width: 95%;
             margin: 10px auto;
@@ -188,17 +192,10 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
         #entry-header {
             float: left;
             width: auto;
-            text-align: center;
+            font-size: medium;
         }
         
-        .sectionTitle, .sectionContent {
-            width: 100%;
-        }
-        
-        .sectionTitle {
-            margin-left: -2px;
-            font-size: 1.25em;
-        }
+
     }
         
 
