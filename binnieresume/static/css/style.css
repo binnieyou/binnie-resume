@@ -11,7 +11,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
     display:block;
     }
     
-    html, body {background: #ffffff; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
+    html, body {background: #ffffff; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222; scroll-behavior: smooth;}
     
     .clear {clear: both;}
     
@@ -25,7 +25,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 
 
     .nav {
-        padding-right: 25px;
+        padding-right: 1em;
     }
     
     #content-container {
@@ -34,97 +34,53 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
         margin: 10px auto;
     }
 
-
-    #entry-header {
-        font-family: 'Stylish', sans-serif;
-        color: #01151f;
-        margin-top: 0;
-        padding: 5px 5px ;
-    }
     
     #entry-header h1 {
         font-size: 1.5em;
         font-weight: 700;
-        font-family: 'Stylish', sans-serif;
+        font-family: 'Oswald', sans-serif;
         color: #01151f;
-        margin-top: 25px;
-        margin-bottom: 30px;
+        margin-bottom: 0.8em;
     }
 
     #entry-header h1, #entry-header h1 a, #entry-header h1 a:visited, #entry-header h1 a:active {
-        font-family: 'Stylish', sans-serif;
+        font-family: 'Oswald', sans-serif;
         color: #01151f;
         font-size: 2em;
         text-decoration-style: wavy;
         text-decoration-color: indianred;
     }
     
-    #entry-header p {
-        font-size: 1em;
-        margin-left: 2px;
-        font-family: 'Lato', sans-serif;
-    }
     
     #entry-header h2, #entry-header h2 a, #entry-header h2 a:visited, #entry-header h2 a:active {
         font-size: 1em;
         margin-left: 2px;
-        font-family: 'Lato', sans-serif;
+        font-family: 'Oswald', sans-serif;
+        color:#0B589B;
         clear: left;
     }
 
-    .lastname {
-        color: indianred;
+    .date {
+        color: #959595;
     }
 
-    .about {
-        margin: 0px 0px 16px;
-        padding: 0px 0px 0px 20px;
+   
 
-    }
-
-    .about h1 {
-        font-family: 'Merriweather', serif;
-        font-style: italic;
-        font-size: 2em;
-        color: #076d9f;
-    }
-    
-    .about h2 {
-        font-family: 'Lato';
-        color: #01151f;
-        font-size: 1.7em;
-        margin-bottom: 10px;
-        margin-left: 10px;
-    }
-
-    .about h4, li {
-        font-family: 'Lato';
-        color: #01151f;
-        font-size: 1.1em;
-        margin-bottom: 5px;
-        margin-left: 25px;
-    }
-
-    #mainArea {
-        padding: 30px;
-    }
-    
     #profile {
         width: 17%;
         float: left;
-        margin-top: 40px;
-        margin-right: 30px;
+        margin-top: 1em;
+        margin-right: 2em;
     }
     
     #profile img {
         width: 100%;
         height: auto;
-        border-radius: 50px;
+        border-radius: 2em;
     }
 
     
 
-    
     section {
         padding: 20px 0 0;
         border-bottom: 1px solid #dedede;
@@ -157,44 +113,48 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
     .sectionContent {
         font-family: 'Lato';
         font-size: 1em;
-        width: 72.5%;
+        width: 100%;
         padding-left: 10px;
     }
 
     .sectionContent h1 {
-        font-family: 'Lato';
-        font-size: 1.7em;
-        margin-bottom: 10px;
+        font-family: 'Oswald', sans-serif;
+        font-style: normal;
+        font-size: 1.8em;
+        color: indianred;
+        margin-bottom: 5px;
         margin-left: 10px;
     }
     
     .sectionContent h2 {
         font-family: 'Lato';
         color: #01151f;
-        font-size: 1.5em;
-        margin-bottom: 10px;
+        font-size: 1.6em;
+        margin-bottom: 5px;
         margin-left: 10px;
     }
 
     .sectionContent h3 {
         font-family: 'Lato';
         color: #01151f;
-        font-size: 1.3em;
-        margin-bottom: 10px;
-        margin-left: 10px;
+        font-size: 1.4em;
+        margin-top: 1em;
+        margin-bottom: 5px;
+        margin-left: 20px;
     }
 
-    .sectionContent h4 {
+    .sectionContent h4, ul {
         font-family: 'Lato';
         color: #01151f;
-        font-size: 1.1em;
+        font-size: 1.2em;
         margin-bottom: 10px;
-        margin-left: 10px;
+        margin-left: 20px;
     }
    
-    .sectionContent ul, li {
+    .sectionContent li {
         font-family: 'Lato';
         color: #01151f;
+        font-size: 1em;
         margin-bottom: 10px;
         margin-left: 20px;
     }
