@@ -23,11 +23,6 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
     }
 
 
-
-    .nav {
-        padding-right: 1em;
-    }
-    
     #content-container {
         width: 90%;
         max-width: 1000px;
@@ -69,7 +64,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
    
 
     #profile {
-        width: 17%;
+        width: 25%;
         float: left;
         margin-top: 1em;
         margin-right: 2em;
@@ -78,13 +73,13 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
     #profile img {
         width: 100%;
         height: auto;
-        border-radius: 2em;
+        border-radius: 1.5em;
     }
 
     
 
     section {
-        padding: 20px 0 0;
+        padding: 70px 0 0;
         border-bottom: 1px solid #dedede;
     }
     
@@ -93,7 +88,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
     }
     
     section:last-child {
-        padding: 20px 0 10px;
+        padding: 50px 0 10px;
         border-bottom: 1px solid #dedede;
 
     }

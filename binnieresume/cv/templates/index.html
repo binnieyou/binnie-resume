@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="The Curriculum Vitae of Binnie You."/>
+<meta name="description" content="The Curriculum Vitae of Binnie You.">
 
 <title>HyunBin (Binnie) You - Nursing PhD Student at Duke</title>
 
@@ -29,11 +29,11 @@
 
 <body id="page-top">
 	<!-- Start Navigation bar-->
-	<div class="navbar navbar-expand-lg navbar-default navbar-static-top justify-content-between">
+	<div class="navbar navbar-expand-lg navbar-default navbar-fixed-top justify-content-between" style="background-color: #f0f0f0;">
 		<div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand js-scroll-trigger" href="/">
-					<span style="color: indianred;"> HyunBin (Binnie) You </span>
+				<a class="navbar-brand js-scroll-trigger" href="/" style="color: indianred;">
+					<span > HyunBin (Binnie) You </span>
 				</a>
 
 				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -46,12 +46,12 @@
 			
 			<div class="collapse navbar-collapse navHeaderCollapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="/"> Home </a></li>
+					<li><a href="#entry-header"> Home </a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="page-top"> 
 							CV <b class="caret"></b>
 						</a>
-						<ul class="dropdown-menu">
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							<li><a href="#focus"> Research Interest </a></li>					
 							<li><a href="#education"> Education </a></li>
 							<li><a href="#experience"> Research Experience </a></li>
@@ -60,7 +60,7 @@
 							<li><a href="#etc"> Miscellaneous </a></li>
 						</ul>
 					</li>
-					<li><a href="#"> Blog </a></li>
+					<li><a href="#blog" onclick="return false;"> Blog </a></li>
 					<li><a href="#contact"> Contact </a></li>
 				</ul>
 			</div>
@@ -72,8 +72,8 @@
 	<div id="content-container">
 		<!-- #entry-header -->
 		<section id="entry-header">
-			<div id="profile" style="display: none;">
-				<img width="100%" src="{% static 'images/pic1.jpg' %}" alt="Profile-pic">
+			<div id="profile" >
+				<img src="{% static 'images/pic3.jpeg' %}" class="img-fluid" alt="Profile-pic">
 			</div>
 			
 			<h1 class>
@@ -302,10 +302,10 @@
 					<h4> Author1, Author2, Author3 </h4>
 					<ul>Journal Name (Journ abrev.)., 2020, City, State, Nation </ul>
 					<ul>
-						<a href=""> [PDF] </a>
-						<a href="#none" onclick="toggle_block('detail-Article1');"> [BibTex] </a>
-						<a href="#none" onclick="toggle_block('detail-Article1');"> [Details] </a>
-						<pre id="bibtex-article1" style="display: none; transform: translate(-155px, 15px); font-size: 15px;"> 
+						<a href="#"> [PDF] </a>
+						<a href="#" onclick="toggle_block('bibtex-article1');"> [BibTex] </a>
+						<a href="#" onclick="toggle_block('detail-article1');"> [Details] </a>
+						<pre id="bibtex-article1" style="display: none; transform: translate(-155px, 15px); font-size: 1.2em;"> 
 							[BibTex 내용 끌어오기]
 						</pre>
 						<div id="detail-article1" style="text-align: justify; display: none;">
@@ -326,9 +326,9 @@
 					<h4> Anxiety and Critical Care Needs of the Families in the ICU </h4>
 					<ul>
 						<a href=""> [PDF] </a>
-						<a href="#none" onclick="toggle_block('detail-Article1');"> [BibTex] </a>
-						<a href="#none" onclick="toggle_block('detail-Article1');"> [Details] </a>
-						<pre id="bibtex-article1" style="display: none; transform: translate(-155px, 15px); font-size: 15px;"> 
+						<a href="#none" onclick="toggle_block('bibtex-article');"> [BibTex] </a>
+						<a href="#none" onclick="toggle_block('detail-article1');"> [Details] </a>
+						<pre id="bibtex-article1" style="display: none; font-size: 1.2em;"> 
 							[BibTex 내용 끌어오기]
 						</pre>
 						<div id="detail-article1" style="text-align: justify; display: none;">
