@@ -1,0 +1,222 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="The Curriculum Vitae of Binnie You.">
+
+<title>HyunBin (Binnie) You - Nursing PhD Student at Duke</title>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<!--Custom fonts for this template-->
+<link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Jaldi:wght@700&display=swap" type="text/css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Lato&display=swap" type="text/css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Stylish&display=swap" type="text/css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" type="text/css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Rock+Salt&display=swap" type="text/css">
+<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' type='text/css'>
+<link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" type="text/css">
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body id="page-top">
+	<!-- Start Navigation bar-->
+	<div class="navbar navbar-expand-lg navbar-default navbar-fixed-top justify-content-between" style="background-color: #f0f0f0;">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand js-scroll-trigger" href="/" style="color: indianred;">
+					<span > HyunBin (Binnie) You </span>
+				</a>
+
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                
+				</button>
+			</div>
+			
+			
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#entry-header"> Home </a></li>
+					<li><a href="/#focus"> CV </a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="page-top"> 
+							    Blog <b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a href="#posts""> Thoughts </a></li>
+                            <hr></hr>
+							<li><a href="#travel" style="pointer-events: none; cursor: default;"> Travel </a></li>					
+							<li><a href="#conference" style="pointer-events: none; cursor: default;"> Conference </a></li>
+						</ul>
+					</li>
+					<li><a href="#contact"> Contact </a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- End Navigation bar-->
+
+
+	<div id="content-container">
+		<!-- #entry-header -->
+		<section id="entry-header">
+			<div id="profile" >
+				<img src="{% static 'images/pic3.jpeg' %}" class="img-fluid" alt="Profile-pic">
+			</div>
+			
+			<h1 class>
+				<a href="/">HyunBin (Binnie) <span style="color: indianred;"> You </span></a>
+			</h1>
+			<h1><span style="font-family: stylish; font-size: 1.5em; margin-top: 0px; padding-left: 0.3em;">유현빈 </span></h1>
+			<div class="sectionContent">
+				<h2 style="color: #000000; font-size: 1.3em;"> 
+					Ph.D. student in Nursing at 
+					<a href="http://duke.edu/">Duke University </a> <br>
+					Advisor: Dr. <a href="">Adivsor name</a> <br>
+					<a href="mailto:hyunbin.you@duke.edu" target="_blank"> hyunbin.you@duke.edu </a>
+					・ <a href="//goo.gl/maps/HfDUGDEGxwYPU2wY6"> 307 Trent Drive </a>
+					・ <a href=""> Curriculum Vitae </a><br> 
+					<br>
+				</h2>
+			</div>
+		</section>
+
+		<!-- Blog Posts -->
+		<section id="posts">
+			<div class="sectionTitle">
+				<h1> Posts </h1>
+			</div>
+
+			<div class="sectionContent" >
+				<h1> Thoughts </h1>
+                {% for post in posts %}
+                    <article>
+                        <h3 style="font-family: Oswald;"> <a href="" style="color: #01151f;">{{ post.title }}</a> </h3>
+                            <ul><span class="date"> {{ post.created_date }} </span></ul>
+                            <ul><p>{{ post.text|linebreaks }}</p></ul>
+                    </article>
+                    <br>
+                {% endfor %}
+			</div>
+
+			<div class="clear"></div>
+			
+		</section>
+		<!-- Blog Posts end -->
+
+        <!-- Travel Posts -->
+		<section id="travel" style="display: none;">
+			<div class="sectionTitle">
+				<h1> Travel </h1>
+			</div>
+
+			<div class="sectionContent" >
+				<h1> 2020 </h1>
+                {% for post in travel %}
+                    <article>
+                        <h3 style="font-family: Oswald;"> <a href="" style="color: #01151f;">{{ post.title }}</a> </h3>
+                            <ul><span class="date"> {{ post.created_date }} </span></ul>
+                            <ul><p>{{ post.text|linebreaks }}</p></ul>
+                    </article>
+                    <br>
+                {% endfor %}
+			</div>
+
+			<div class="clear"></div>
+			
+		</section>
+		<!-- Travel Posts end -->
+
+
+        <!-- Conference Posts -->
+		<section id="conference" style="display: none;">
+			<div class="sectionTitle">
+				<h1> 2020 </h1>
+			</div>
+
+			<div class="sectionContent" >
+				<h1> 2020 </h1>
+                {% for post in conference %}
+                    <article>
+                        <h3 style="font-family: Oswald;"> <a href="" style="color: #01151f;">{{ post.title }}</a> </h3>
+                            <ul><span class="date"> {{ post.created_date }} </span></ul>
+                            <ul><p>{{ post.text|linebreaks }}</p></ul>
+                    </article>
+                    <br>
+                {% endfor %}
+			</div>
+
+			<div class="clear"></div>
+			
+		</section>
+		<!-- Conference Posts end -->
+
+		<!-- Contact -->
+		<section id="contact">
+			<div class="sectionTitle">
+				<h1> Contact </h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h1 style="color: #000000; text-align: left; font-size: 1.3em;"> If you have any questions, feel free to reach me through, </h1>
+					<ul style="font-family: Oswald;"> Email : <a href="mailto:hyunbin.you@duke.edu" target="_blank" style="color: indianred;"> hyunbin.you@duke.edu </a></ul>
+					<ul style="font-family: Oswald;">Address : <a href="//goo.gl/maps/HfDUGDEGxwYPU2wY6" style="color: indianred;"> 307 Trent Drive </a></ul>
+				</article>
+			
+			</div>
+			<div class="clear"></div>
+		</section>
+		<!-- Contact end-->
+	</div>
+
+
+	
+
+
+
+	<!-- Bootstrap core Javascript -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	
+	<!-- Plugin JavaScript -->
+	
+	<!-- Custom scripts for this template -->
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		var pageTracker = _gat._getTracker("UA-3753241-1");
+		pageTracker._initData();
+		pageTracker._trackPageview();
+	</script>	
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162924691-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-162924691-1');
+	</script>
+
+	<!-- Clustrmaps -->
+	<a href="https://clustrmaps.com/site/1b6j9" title="Visit tracker">
+		<img width="0" height="0" src="//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=m&d=cbYXmgWn_aU6ryXBNZQWyTsRKPze3YvgQZjD0uxBKsQ" />
+	</a>
+</body>
+</html>
