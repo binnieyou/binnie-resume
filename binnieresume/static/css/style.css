@@ -241,6 +241,6 @@ details[open] {
 }
 
 details[open] summary {
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid ;
     margin-bottom: .5em;
 }
